@@ -1,4 +1,4 @@
-/**
+package TCP; /**
  * WisdomWords class to be used with the WisdomWords (TCP or UDP) protocol.
  * Loads a file of wise sayings indicated at the command line when the server
  * is started.  
@@ -7,10 +7,12 @@
  *
  */
 
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class WisdomWords{
+public class WisdomWords {
 
     // holds the wise sayings
     private ArrayList<String> wisdom;
@@ -58,7 +60,6 @@ public class WisdomWords{
     /**
      * Returns the wise saying at the index
      *
-     * @param integer representing selected saying
      * @return Wise saying as a string or empty string if the index is out
      * of bounds. 
      */
